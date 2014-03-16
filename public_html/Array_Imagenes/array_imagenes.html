@@ -1,0 +1,41 @@
+<html style backgroung="lightgray">
+    
+    <head>
+        <script type="text/javascript">
+        <!--
+            var image1 = new Image();
+            image1.src = "1.jpg";
+            var image2 = new Image();
+            image2.src = "2.jpg";
+            var image3 = new Image();
+            image3.src = "3.jpg";
+            var image4 = new Image();
+            image4.src = "4.jpg";
+            var image5 = new Image();
+            image5.src = "5.jpg";
+        //-->
+        </script>
+    </head>
+    <body>
+        <img src="1.jpg" id="slide" width="400" height="200" />
+        <script>
+        <!--
+        //variable that will increment through the images
+            var step = 1;
+            function slideit() {
+        //if browser does not support the image object, exit.
+                if (!document.images)
+                    return;
+                document.images.slide.src = eval("image" + step + ".src");
+                if (step < 5)
+                    step++;
+                else
+                    step = 1;
+        //call function "slideit()" every 2.5 seconds
+                setTimeout("slideit()", 1000);
+            }
+            slideit();
+        //-->
+        </script>
+    </body>
+</html>
