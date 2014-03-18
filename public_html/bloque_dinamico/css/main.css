@@ -1,0 +1,19 @@
+
+* {
+    font: 20px, arial, verdana;
+}
+
+.bloque1 {
+    float: left;
+    display: block;
+    
+}
+
+.bloque2 {
+    display: block;
+    
+}
+
+#left, #right {
+    font: 38px, arial, verdana;
+}
